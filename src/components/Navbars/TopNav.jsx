@@ -1,9 +1,16 @@
-import { FaBars, FaRedhat } from 'react-icons/fa'
-import NavElements from "./NavElements"
+import { FaBars } from 'react-icons/fa'
+import {
+  Nav,
+  NavbarContainer,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks
+} from "./NavElements"
 
 function TopNav() {
   return (
-    <Nav>TopNav
+    <Nav>
       <NavbarContainer >
         <MobileIcon >
           <FaBars />
@@ -25,8 +32,6 @@ function TopNav() {
           </NavItem>
         </NavMenu>     
       </NavbarContainer>
-
-
     </Nav>
   )
 }

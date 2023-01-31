@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`
   background-color: transparent;
-  height: 70px;
-  margin-top: -80px;
+  height: 90px;
+  /* margin-/top: -80px; */
   display: flex;
   justify-content: center;
   align-items: center;

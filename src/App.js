@@ -12,7 +12,7 @@ function App() {
       <TopNav />
 
       <Routes>
-      <Route path='/welcome' element={<WelcomePage />} />
+        <Route path='/welcome' element={<WelcomePage />} />
         <Route path='/dashboard' element={<DashboardPage />} />
         <Route path='/flashcards' element={<FlashcardPage />} />
         <Route path='/resources' element={<ResourcePage />} />
