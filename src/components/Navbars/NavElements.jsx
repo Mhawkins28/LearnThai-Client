@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`
   background-color: transparent;
-  height: 90px;
-  /* margin-/top: -80px; */
+  height: 70px;
+  margin-top: -50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 1;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 550px) {
     transition: 0.8s all ease;
   }
 `
@@ -27,30 +27,10 @@ export const NavbarContainer = styled.div`
   padding: 0 24px;
   max-width: 92%;
 `
-
-export const NavLogo = styled(Link)`
-  color: #2E4756;
-  justify-self: flex-end;
-  display: block;
-  font-size: 1.6rem;
-  /* -webkit-text-stroke-width: 1.5px; */
-  /* -webkit-text-stroke-color: #AD898D; */
-  // text-transform:  uppercase;
-  display: flex;
-  align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  letter-spacing:-1px;
-
-@media screen and (max-width: 925px) {
-  color: #AD898D;
-}
-`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 925px) {
+  @media screen and (max-width: 550px) {
     display: block;
     position: absolute;
     top: 0;
@@ -68,7 +48,7 @@ export const NavMenu = styled.ul`
   text-align: center;
   
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 550px) {
   display: none
 }
 `
