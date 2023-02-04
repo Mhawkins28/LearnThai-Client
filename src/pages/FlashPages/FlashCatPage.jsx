@@ -10,7 +10,7 @@ const FlashCatPage = () => {
   return (
     <PageContainer>
       <HeaderWrap>
-        <Header>
+        <Header>What Do You want to study?
         </Header>
       </HeaderWrap>
       <CatContainer>

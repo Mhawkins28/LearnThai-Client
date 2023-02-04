@@ -1,13 +1,26 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const PageContainer = styled.main``
-export const HeaderWrap = styled.header`
-
+export const PageContainer = styled.main`
+display: flex;
+flex-direction: column;
 `
-export const Header = styled.h1``
+
+export const HeaderWrap = styled.header`
+display: flex;
+justify-content: center;
+margin-top: 2em;
+`
+
+export const Header = styled.h1`
+display: flex;
+text-transform: "uppercase";
+`
+
 export const CatContainer = styled.section`
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 `
 export const CatCard = styled(Link)`
   display: flex;
