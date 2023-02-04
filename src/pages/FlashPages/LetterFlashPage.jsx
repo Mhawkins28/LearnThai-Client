@@ -16,7 +16,7 @@ function FlashcardPage() {
   }
 
   return (
-    <div>FlashcardPageyay</div>
+    <div>FlashcardPage</div>
   )
 }
 
