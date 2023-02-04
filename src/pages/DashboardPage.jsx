@@ -1,18 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from "react-router-dom"
 
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 2em;
-`
-const HeroContainer = styled.div`
-  border: 1px solid red;
-  display: flex;
-  max-width: 100vw;
-  height: 15em;
-  margin-bottom: 1em;
-
 `
 const GridContainer = styled.div`
   display: grid; 
@@ -27,31 +19,49 @@ const GridContainer = styled.div`
     "toDo flashcards cal"
     "toDo flashcards cal";
   height: 90vh;
+  margin: 2em;
   
-.tracker { grid-area: tracker; border: 1px solid black; }
-.goal { grid-area: goal; border: 1px solid black}
-.cal { grid-area: cal; border: 1px solid black}
-.toDo { grid-area: toDo; border: 1px solid black}
-.flashcards { grid-area: flashcards; border: 1px solid black}
-.resources { grid-area: resources; border: 1px solid black}
-.notes { grid-area: notes;border: 1px solid blue; background: #393994;}
-.other { grid-area: other; border: 1px solid black}
+.tracker { 
+  grid-area: tracker; 
+  border: 1px solid black; 
+}
+.goal { 
+  grid-area: goal; 
+  border: 1px solid black
+}
+.cal { 
+  grid-area: cal; 
+  border: 1px solid black
+}
+.toDo { 
+  grid-area: toDo; 
+  border: 1px solid black
+}
+.flashcards { 
+  grid-area: flashcards; 
+  border: 1px solid black
+}
+.resources { 
+  grid-area: resources; 
+  border: 1px solid black
+}
+.notes { 
+  grid-area: notes;
+  border: 1px solid blue; 
+  background: #393994;
+  }
 `
-
 
 const DashboardPage = () => {
   return (
     <PageContainer>
-      <HeroContainer>
-        placeholder for hero
-      </HeroContainer>
       <GridContainer>
         <div className="tracker">Tracker</div>
         <div className="goal">Daily goal</div>
         <div className="cal">Calender</div>
         <div className="toDo">To Do list</div>
-        <div className="flashcards">flashcard link</div>
-        <div className="resources">resource link</div>
+        <Link to="/flashcards" className="flashcards">Flashcards</Link>
+        <Link to="/resources" className="resources">resources</Link>
         <div className="notes"></div>
       </GridContainer>
     </PageContainer>
