@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllAlphabet } from "../utils/alphabetes.js";
+import { getAllAlphabet } from "../../utils/alphabets.js";
 
 
 function FlashcardPage() {
@@ -16,7 +16,7 @@ function FlashcardPage() {
   }
 
   return (
-    <div>FlashcardPage</div>
+    <div>FlashcardPageyay</div>
   )
 }
 

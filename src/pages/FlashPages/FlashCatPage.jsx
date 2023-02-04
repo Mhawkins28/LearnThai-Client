@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import { PageContainer,
         HeaderWrap,
         Header,
@@ -14,7 +14,9 @@ const FlashCatPage = () => {
         </Header>
       </HeaderWrap>
       <CatContainer>
-        <CatCard></CatCard> {/* nts: styled as a Link */}
+        <CatCard to="/flashcards/letters">letters</CatCard> 
+        <CatCard to="/flashcards/numbers">numbers</CatCard> 
+        <CatCard to="/flashcards/phrases">phrases</CatCard> 
       </CatContainer>
     </PageContainer>
   )
