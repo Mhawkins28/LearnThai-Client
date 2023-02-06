@@ -7,6 +7,8 @@ import LetterFlashPage from "./pages/FlashPages/LetterFlashPage";
 import NumberFlashPage from "./pages/FlashPages/NumberFlashPage";
 import PhraseFlashPage from "./pages/FlashPages/PhraseFlashPage";
 import ResourcePage from "./pages/ResourcePages/ResourceCatPage";
+import VidResourcePage from "./pages/ResourcePages/";
+import MatResourcePage from "./pages/ResourcePages/";
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Route path='/flashcards/numbers' element={<NumberFlashPage />} />
         <Route path='/flashcards/phrases' element={<PhraseFlashPage />} />
         <Route path='/resources' element={<ResourcePage />} />
+        <Route path='/resources/videos' element={<VidResourcePage />} />
+        <Route path='/resources/materials' element={<MatResourcePage />} />
       </Routes>
     </>
   );
