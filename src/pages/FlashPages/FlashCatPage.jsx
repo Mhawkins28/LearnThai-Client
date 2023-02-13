@@ -21,4 +21,4 @@ const FlashCatPage = () => {
   )
 }
 
-export default FlashCatPage
+export default FlashCatPage         
