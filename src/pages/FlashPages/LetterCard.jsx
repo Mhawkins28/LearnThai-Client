@@ -1,21 +1,21 @@
 import React from 'react'
+import Card from "../../components/Flashcards/Card.jsx"
 import { 
   PageContainer,
-  CardContainer,
   CardFront,
   CardBack,
   ButtonContainer,
   Button,
 
-} from "../../components/FlashcardElements"
+} from "../../components/Flashcards/FlashcardElements"
 
 const LetterCard = () => {
   return (
   <PageContainer>
-    <CardContainer>
+    <Card>
       <CardFront> Front </CardFront>
       <CardBack> Back </CardBack>
-    </CardContainer>
+    </Card>
     <ButtonContainer>
       <Button />
       <Button />

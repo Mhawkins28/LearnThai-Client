@@ -9,7 +9,8 @@ const FlashCatPage = () => {
   return (
     <PageContainer>
       <HeaderWrap>
-        <Header>What Do You want to study?
+        <Header> 
+          <h1>What Do You want to study?</h1>
         </Header>
       </HeaderWrap>
       <CatContainer>
@@ -21,4 +22,4 @@ const FlashCatPage = () => {
   )
 }
 
-export default FlashCatPage         
+export default FlashCatPage
