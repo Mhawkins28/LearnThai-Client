@@ -3,8 +3,8 @@ import TopNav from "./components/Navbars/TopNav";
 import WelcomePage from "./pages/WelcomePage"
 import DashboardPage from "./pages/DashboardPage";
 import FlashCatPage from "./pages/FlashPages/FlashCatPage";
-import LetterFlashPage from "./pages/FlashPages/LetterFlashPage";
-import LetterCard from "./pages/FlashPages/LetterCard";
+import LetterCards from "./pages/FlashPages/LetterCards";
+// import LetterCard from "./pages/FlashPages/LetterCard";
 import NumberFlashPage from "./pages/FlashPages/NumberFlashPage";
 import NumberCard from "./pages/FlashPages/NumberCard";
 import PhraseFlashPage from "./pages/FlashPages/PhraseFlashPage";
@@ -24,8 +24,8 @@ function App() {
         <Route path='/welcome' element={<WelcomePage />} />
         <Route path='/dashboard' element={<DashboardPage />} />
         <Route path='/flashcards' element={<FlashCatPage />} />
-        <Route path='/flashcards/letters' element={<LetterFlashPage />} />
-        <Route path='/flashcards/letters/:id' element={<LetterCard />} />
+        <Route path='/flashcards/letters' element={<LetterCards />} />
+        {/* <Route path='/flashcards/letters/:id' element={<LetterCard />} /> */}
         <Route path='/flashcards/numbers' element={<NumberFlashPage />} />
         <Route path='/flashcards/numbers/:id' element={<NumberCard />} />
         <Route path='/flashcards/phrases' element={<PhraseFlashPage />} />
