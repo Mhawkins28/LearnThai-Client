@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from "../../components/Flashcards/Card.jsx"
+import Card from "../../components/Flashcards/ConsonantCard.jsx"
 import { 
   PageContainer,
   CardFront,
