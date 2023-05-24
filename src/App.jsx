@@ -11,7 +11,7 @@ import ResourcePage from "./pages/ResourcePages/ResourceCatPage";
 import VidResourcePage from "./pages/ResourcePages/VidResourcePage";
 import MatResourcePage from "./pages/ResourcePages/MatResourcePage";
 import LoginPage from "./pages/AuthPages/LoginPage";
-import SignUpPage from "./pages/AuthPages/LoginPage";
+import SignUpPage from "./pages/AuthPages/SignUpPage";
 
 
 

@@ -1,26 +1,26 @@
-import React from 'react'
-import Card from "../../components/Flashcards/ConsonantCard.jsx"
-import { 
-  PageContainer,
-  CardFront,
-  CardBack,
-  ButtonContainer,
-  Button,
+import { PageContainer,
+  HeaderWrap,
+  Header,
+  CatContainer,
+  CatCard
+  } from '../../components/CategoryElements'
 
-} from "../../components/Flashcards/FlashcardElements.jsx"
 
 const LetterCards = () => {
   return (
-  <PageContainer>
-    <Card>
-      {/* <CardFront> Front </CardFront>
-      <CardBack> Back </CardBack> */}
-    </Card>
-    <ButtonContainer>
-      <Button />
-      <Button />
-    </ButtonContainer>
-  </PageContainer>
+    <PageContainer>
+      <HeaderWrap>
+        <Header> 
+          <h1>Here we Go</h1>
+        </Header>
+      </HeaderWrap>
+      <CatContainer>
+        <CatCard to="/flashcards/letters/consonants">Consonants</CatCard> 
+        <CatCard to="/flashcards/letters/vowels">Vowels</CatCard> 
+        <CatCard to="/flashcards/letters/other">Other (?)</CatCard> 
+     
+      </CatContainer>
+    </PageContainer>
   )
 }
 

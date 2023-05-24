@@ -45,7 +45,7 @@ const GridContainer = styled.div`
   grid-area: resources; 
   border: 1px solid black
 }
-.notes { 
+.center { 
   grid-area: notes;
   border: 1px solid blue; 
   background: #393994;
@@ -64,7 +64,7 @@ const DashboardPage = () => {
         <div className="toDo">To Do list</div>
         <Link to="/flashcards" className="flashcards">Flashcards</Link>
         <Link to="/resources" className="resources">resources</Link>
-        <div className="notes"></div>
+        <div className="center">learned words: maybe use word cloud then link to page with list <br></br><br></br>-- (https://codesandbox.io/s/basic-demo-forked-yup2o?file=/src/App.js) <br></br><br></br>-- add boolean to models for "learned" radio?</div>
       </GridContainer>
     </PageContainer>
   )
