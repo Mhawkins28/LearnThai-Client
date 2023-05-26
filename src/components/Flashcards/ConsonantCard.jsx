@@ -1,35 +1,40 @@
 import { useState, useEffect } from "react";
-import { getAllAlpha } from "../../utils/alphabets.js";
-import ConsonantCard from "./ConsonantCard.jsx";
+import { getAllAlpha } from "../../utils/letters.js";
 
 const Card = () => {
-  const [alphaData, setAlphaData] = useState({
+
+  const [letterData, setLetterData] = useState({
     category: "",
-    letter: "",
-    pronounciation: "",
     class: "",
-    thai: "",
+    letter: "",
     rtgs: "",
+    thaiWord: "",
+    acrophonicRtgs: "",
     meaning: "",
     initial: "",
     final: "",
+    audioFile: ""
   });
-
+  
+  
   const GetLetters = async () => {
     const allLetters = await getAllAlpha();
-    setAlphaData(allLetters);
+    setLetterData(allLetters);
   };
-
+  
   useEffect(() => {
     GetLetters();
   }, []);
+  
 
   return (
     <div>
-      <p>Alphabet cards here</p>
-      {/* {alphaData.map((letter) => (
-        <LetterCard key={letter._id} letter={letter} />
-      ))} */}
+      {Object.values(letterData).map((data, idx)=> (
+      <div key={idx} >
+      <h2>{data.letter}</h2>
+      <h2>{data.rtgs}</h2>
+      </div>
+      ))}
     </div>
   );
 };

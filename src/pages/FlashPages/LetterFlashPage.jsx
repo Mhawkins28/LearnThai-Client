@@ -18,7 +18,6 @@ const LetterCards = () => {
         <CatCard to="/flashcards/letters/consonants">Consonants</CatCard> 
         <CatCard to="/flashcards/letters/vowels">Vowels</CatCard> 
         <CatCard to="/flashcards/letters/other">Other (?)</CatCard> 
-     
       </CatContainer>
     </PageContainer>
   )

@@ -21,8 +21,8 @@ function App() {
       <TopNav />
 
       <Routes>
-        {/* <Route path="/login" element={<LoginPage/>} />*/}
-        {/* <Route path="/register" element={<SignUpPage/>} />  */}
+        <Route path="/login" element={<LoginPage/>} />
+        <Route path="/signup" element={<SignUpPage/>} /> 
         <Route path='/' element={<WelcomePage />} />
         <Route path='/dashboard' element={<DashboardPage />} />
         <Route path='/flashcards' element={<FlashCatPage />} />
@@ -34,8 +34,6 @@ function App() {
         <Route path='/resources' element={<ResourcePage />} />
         <Route path='/resources/videos' element={<VidResourcePage />} />
         <Route path='/resources/materials' element={<MatResourcePage />} />
-        <Route path='/login' element={<LoginPage />} />
-        <Route path='/signup' element={<SignUpPage />} />
       </Routes>
     </>
   );
