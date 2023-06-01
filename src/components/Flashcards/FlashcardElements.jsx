@@ -3,16 +3,16 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div `
   
-.card {
+.data {
   margin: 10px auto;
-  background: var(--grad-one);
+  background: #557c75;
   height: 350px;
   width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   /* flex-direction: column; */
-  color: #ffffff;
+  color: #000000;
   font-size: 24px;
   font-weight: 400;
   border-radius: var(--border-radius);
@@ -28,27 +28,27 @@ export const CardContainer = styled.div `
 }
 
 .side {
-  background: var(--grad-two);
+  background: #557c75;
   transform: rotateY(-180deg);
 }
 
-.card .front,
-.card .back {
+.data .front,
+.data .back {
   position: absolute;
-  padding: 1rem;
+  /* padding: 1rem; */
   backface-visibility: hidden;
 }
 
-.card .front {
+.data .front {
   transform: rotateY(0deg);
 }
 
-.card.side .front {
+.data.side .front {
   opacity: 0;
   display: none;
 }
 
-.card .back {
+.data .back {
   transform: rotateY(180deg);
 }
 `

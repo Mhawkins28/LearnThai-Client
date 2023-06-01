@@ -1,33 +1,8 @@
 import { useState, useEffect } from "react";
-import { getAllAlpha } from "../../utils/letters.js";
 import { CardContainer } from "../Flashcards/FlashcardElements.jsx"
 
 
-const Card = () => {
-
-  const [letterData, setLetterData] = useState({
-    category: "",
-    class: "",
-    letter: "",
-    rtgs: "",
-    thaiWord: "",
-    acrophonicRtgs: "",
-    meaning: "",
-    initial: "",
-    final: "",
-    audioFile: ""
-  });
-  
-  
-  const GetLetters = async () => {
-    const allLetters = await getAllAlpha();
-    setLetterData(allLetters);
-  };
-  
-  useEffect(() => {
-    GetLetters();
-  }, []);
-  
+const Card = ({data, idx}) => {
 
   const [side, setSide] = useState();
 
@@ -37,19 +12,19 @@ const Card = () => {
     console.log(side);
   }
 
-//TODO: 1) currently no data on cards. Need to move the map over to the Page? look at https://codesandbox.io/s/flashcards-in-react-forked-1ntg7x?file=/src/Card.tsx:257-261. 2) fix a little css to test more. 3) make sure Page/component structure and orginizaiton is efficient
+//TODO: 1) currently no data on back. Prob a CSS issue. Look at https://codesandbox.io/s/flashcards-in-react-forked-1ntg7x?file=/src/Card.tsx:257-261. 
+
+//TODO: 2) make sure Page/component structure and orginizaiton is efficient. also fixing CSS Elements.
 
   return (
     <CardContainer>
-    <div className={`card ${side ? "side" : ""}`} onClick={handleClick}>
-      {Object.values(letterData).map((data, idx)=> (
+    <div className={`data ${side ? "side" : ""}`} onClick={handleClick}>
       <div key={idx} >
       <div className="front">{data.letter}</div>
       <div className="back">
         {data.rtgs}
-        </div>
+    </div>
       </div>
-      ))}
     </div>
     </CardContainer>
   );
