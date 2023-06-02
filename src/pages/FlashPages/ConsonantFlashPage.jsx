@@ -39,7 +39,7 @@ const ConsonantFlashPage = () => {
   return (
     <PageContainer>
       {Object.values(letterData).map((data, idx)=> (
-      <Card key={idx} data={data} />
+      <Card key={idx} data={data}/>
       ))}
     <ButtonContainer>
       <Button />
