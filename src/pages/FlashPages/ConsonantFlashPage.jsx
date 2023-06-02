@@ -23,7 +23,15 @@ const ConsonantFlashPage = () => {
     final: "",
     audioFile: ""
   });
+  const [currentCardIndex, setCurrentCardIndex] = useState(0);
   
+  const getNextCard = () => {
+    setCurrentCardIndex((prevIndex) => (prevIndex + 1) % letterData.length);
+  };
+
+  const getPreviousCard = () => {
+    setCurrentCardIndex((prevIndex) => (prevIndex - 1 + letterData.length) % letterData.length);
+  };
   
   const GetLetters = async () => {
     const allLetters = await getAllAlpha();
@@ -38,14 +46,12 @@ const ConsonantFlashPage = () => {
 
   return (
     <PageContainer>
-      {Object.values(letterData).map((data, idx)=> (
-      <Card key={idx} data={data}/>
-      ))}
-    <ButtonContainer>
-      <Button />
-      <Button />
-    </ButtonContainer>
-  </PageContainer>
+      {letterData.length > 0 && <Card data={letterData[currentCardIndex]} />}
+      <ButtonContainer>
+        <Button onClick={getNextCard}>Next Card</Button>
+        <Button onClick={getPreviousCard}>Back</Button>
+      </ButtonContainer>
+    </PageContainer>
   )
 }
 
