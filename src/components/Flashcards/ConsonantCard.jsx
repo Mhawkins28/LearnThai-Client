@@ -36,12 +36,12 @@ const Card = ({ data }) => {
             <p className="sound">{data.initial}  {data.final}</p>
           </InfoContainer>
 
-          <AudioContainer>
+          <div className="audioContainer">
             <a href={data.audioFile} onClick={togglePlay} target="_blank" rel="noreferrer">
           {playing ? 'Pause Audio' : 'Play Audio'}
             </a>
           {playing && <audio src={data.audioFile} autoPlay />}
-        </AudioContainer>
+        </div>
         </section>
       </div>
     </CardContainer>

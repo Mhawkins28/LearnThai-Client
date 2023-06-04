@@ -39,6 +39,7 @@ export const CardContainer = styled.div`
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
+    min-width: 100%;
   }
 
   .front {
@@ -49,6 +50,15 @@ export const CardContainer = styled.div`
   .back {
     transform: rotateY(180deg);
     opacity: ${(props) => (props.side ? 1 : 0)};
+  }
+
+  .audioContainer {
+    border: 1px solid black;
+    width: 25%;
+    height: 25%;
+    padding:.75rem;
+
+  
   }
 
 `;
@@ -76,10 +86,6 @@ export const InfoContainer = styled.div`
   .wordMeaning {
     margin-bottom: 1.75rem;
   }
-`
-export const AudioContainer = styled.div`
-  border: solid 1px black
-  
 `
 
 export const ButtonContainer = styled.section`
