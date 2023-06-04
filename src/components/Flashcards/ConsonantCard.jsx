@@ -33,7 +33,7 @@ const Card = ({ data }) => {
 
           <InfoContainer>
             <p className="letterClass">class -- {data.class}</p>
-            <p className="sound">{data.initial}  {data.final}</p>
+            <p className="sound">{data.initial} / {data.final}</p> {/*Maybe add as a table*/}
           </InfoContainer>
 
           <div className="audioContainer">

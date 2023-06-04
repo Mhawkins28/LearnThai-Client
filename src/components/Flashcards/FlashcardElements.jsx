@@ -57,9 +57,9 @@ export const CardContainer = styled.div`
     width: 25%;
     height: 25%;
     padding:.75rem;
-
-  
   }
+
+/* TODO: fix the responsivness of the card */
 
 `;
 
