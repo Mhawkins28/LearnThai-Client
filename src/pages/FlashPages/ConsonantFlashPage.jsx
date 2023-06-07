@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { getAllAlpha } from "../../utils/letters.js";
 import Card from "../../components/Flashcards/ConsonantCard.jsx";
 import {
@@ -58,6 +58,7 @@ const ConsonantFlashPage = () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, [currentCardIndex, isCardFlipped]);
+
 
   return (
     <PageContainer>

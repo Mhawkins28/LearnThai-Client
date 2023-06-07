@@ -26,22 +26,22 @@ const Card = ({ data }) => {
         </InfoContainer>
         </section>
         <section className="back">
-          <InfoContainer>
-            <p className="rtgs">{data.rtgs}</p>
-            <p className="wordMeaning">{data.acrophonicRtgs} -- {data.meaning}</p>
-          </InfoContainer>
+        <InfoContainer>
+          <p className="rtgs">{data.rtgs}</p>
+          <p className="wordMeaning">{data.acrophonicRtgs} -- {data.meaning}</p>
+        </InfoContainer>
 
           <InfoContainer>
             <p className="letterClass">class -- {data.class}</p>
             <p className="sound">{data.initial} / {data.final}</p> {/*Maybe add as a table*/}
           </InfoContainer>
 
-          <div className="audioContainer">
+          <AudioContainer>
             <a href={data.audioFile} onClick={togglePlay} target="_blank" rel="noreferrer">
           {playing ? 'Pause Audio' : 'Play Audio'}
             </a>
           {playing && <audio src={data.audioFile} autoPlay />}
-        </div>
+        </AudioContainer>
         </section>
       </div>
     </CardContainer>
