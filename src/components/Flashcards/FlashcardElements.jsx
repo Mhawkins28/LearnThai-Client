@@ -52,12 +52,6 @@ export const CardContainer = styled.div`
     opacity: ${(props) => (props.side ? 1 : 0)};
   }
 
-  .audioContainer {
-    border: 1px solid black;
-    width: 25%;
-    height: 25%;
-    padding:.75rem;
-  }
 
 /* TODO: fix the responsivness of the card */
 
@@ -86,6 +80,13 @@ export const InfoContainer = styled.div`
   .wordMeaning {
     margin-bottom: 1.75rem;
   }
+`
+
+export const AudioContainer = styled.div`
+  border: 1px solid black;
+  width: 25%;
+  height: 25%;
+  padding:.75rem;
 `
 
 export const ButtonContainer = styled.section`
