@@ -28,7 +28,7 @@ export const CardContainer = styled.div`
     cursor: pointer;
     transition: 250ms;
     transform-style: preserve-3d;
-    transform: perspective(1000px) rotateY(${(props) => (props.side ? "-180deg" : "0deg")});
+    transform: perspective(1000px) rotateY(${(props) => (props.isFlipped ? "-180deg" : "0deg")});
     transition: transform 250ms;
   }
 
@@ -44,12 +44,12 @@ export const CardContainer = styled.div`
 
   .front {
     transform: rotateY(0deg);
-    opacity: ${(props) => (props.side ? 0 : 1)};
+    opacity: ${(props) => (props.isFlipped ? 0 : 1)};
   }
 
   .back {
     transform: rotateY(180deg);
-    opacity: ${(props) => (props.side ? 1 : 0)};
+    opacity: ${(props) => (props.isFlipped ? 1 : 0)};
   }
 
 

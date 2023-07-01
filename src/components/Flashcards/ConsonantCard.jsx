@@ -5,20 +5,21 @@ import {
   AudioContainer
   } from "../Flashcards/FlashcardElements.jsx";
 
-const Card = ({ data }) => {
-  const [side, setSide] = useState(false);
+const Card = ({ data, isFlipped, flipCard }) => {
   const [playing, setPlaying] = useState(false);
 
   const handleClick = () => {
-    setSide(!side);
-  };
+    flipCard()
+
+  };  
+
 
   function togglePlay() {
     setPlaying(!playing);
   }
   return (
-    <CardContainer side={side} onClick={handleClick}>
-      <div className={`data ${side ? "side" : ""}`}>
+    <CardContainer isFlipped={isFlipped} onClick={handleClick} >
+      <div className={`data ${isFlipped ? "isFlipped" : ""}`}>
         <section className="front">
         <InfoContainer>
           <p className="letter">{data.letter}</p>

@@ -17,6 +17,7 @@ const ConsonantFlashPage = () => {
     if (keys.length > 0) {
       setCurrentCardIndex((prevIndex) => (prevIndex + 1) % keys.length);
       setIsCardFlipped(false);
+      
     }
   };
 
@@ -48,6 +49,7 @@ const ConsonantFlashPage = () => {
       } else if (event.key === "ArrowLeft") {
         getPreviousCard();
       } else if (event.key === " ") {
+        //event.preventDefault();
         flipCard();
       }
     };
@@ -63,7 +65,7 @@ const ConsonantFlashPage = () => {
   return (
     <PageContainer>
       {Object.keys(letterData).length > 0 && (
-        <Card data={letterData[currentCardIndex]} flipped={isCardFlipped} />
+        <Card data={letterData[currentCardIndex]} isFlipped={isCardFlipped} flipCard={flipCard} />
       )}
       <ButtonContainer>
         <Button onClick={getPreviousCard}>Back</Button>
