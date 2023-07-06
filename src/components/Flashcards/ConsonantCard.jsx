@@ -32,17 +32,17 @@ const Card = ({ data, isFlipped, flipCard }) => {
           <p className="wordMeaning">{data.acrophonicRtgs} -- {data.meaning}</p>
         </InfoContainer>
 
-          <InfoContainer>
-            <p className="letterClass">class -- {data.class}</p>
-            <p className="sound">{data.initial} / {data.final}</p> {/*Maybe add as a table*/}
-          </InfoContainer>
+        <InfoContainer>
+          <p className="letterClass">class -- {data.class}</p>
+          <p className="sound">{data.initial} / {data.final}</p> {/*Maybe add as a table*/}
+        </InfoContainer>
 
-          <AudioContainer>
-            <a href={data.audioFile} onClick={togglePlay} target="_blank" rel="noreferrer">
-          {playing ? 'Pause Audio' : 'Play Audio'}
-            </a>
-          {playing && <audio src={data.audioFile} autoPlay />}
-        </AudioContainer>
+        <AudioContainer>
+          <a href={data.audioFile} onClick={togglePlay} target="_blank" rel="noreferrer">
+        {playing ? 'Pause Audio' : 'Play Audio'}
+          </a>
+        {playing && <audio src={data.audioFile} autoPlay />}
+      </AudioContainer>
         </section>
       </div>
     </CardContainer>

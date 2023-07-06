@@ -10,9 +10,7 @@ const LetterCards = () => {
   return (
     <PageContainer>
       <HeaderWrap>
-        <Header> 
-          <h1>Here we Go</h1>
-        </Header>
+        <Header>Here We Go</Header>
       </HeaderWrap>
       <CatContainer>
         <CatCard to="/flashcards/letters/consonants">Consonants</CatCard> 

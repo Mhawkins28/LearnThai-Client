@@ -9,9 +9,7 @@ const FlashCatPage = () => {
   return (
     <PageContainer>
       <HeaderWrap>
-        <Header> 
-          <h1>What Do You want to study?</h1>
-        </Header>
+        <Header> What Do You want to study?</Header>
       </HeaderWrap>
       <CatContainer>
         <CatCard to="/flashcards/letters">letters</CatCard> 
