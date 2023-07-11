@@ -29,7 +29,7 @@ export const createPhrase = async (PhraseData) => {
 
 export const updatePhrase = async (id, PhraseData) => {
   try {
-    const response = await api.put(`/phrases/${id}`, AlphaData);
+    const response = await api.put(`/phrases/${id}`, PhraseData);
     return response.data;
   } catch (error) {
     throw error;
