@@ -29,7 +29,6 @@ export const CatCard = styled(Link)`
   height: 5em;
   width: 5em;
   margin: 2em;
-
 `
   
 
