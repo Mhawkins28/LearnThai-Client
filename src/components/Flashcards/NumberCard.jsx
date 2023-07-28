@@ -2,26 +2,19 @@ import { useState } from "react";
 import { 
   CardContainer, 
   InfoContainer,
-  AudioContainer
   } from "../Flashcards/FlashcardElements.jsx";
 
 
 
 const NumberCard = ({ data, isFlipped, flipCard }) => {
-  // const [playing, setPlaying] = useState(false);
 
   const handleClick = () => {
     flipCard()
   };  
 
-  // function togglePlay() {
-  //   setPlaying(!playing);
-  // }
-
   return (
     <CardContainer isFlipped={isFlipped} onClick={handleClick} >
       <div className={`data ${isFlipped ? "isFlipped" : ""}`}>
-        
         <section className="front">
         <InfoContainer>
           <p className="thaiWord">{data.thai}</p>
