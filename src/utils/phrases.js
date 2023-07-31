@@ -44,3 +44,12 @@ export const deletePhrase = async (id) => {
     throw error;
   }
 };
+
+export const filtercategory = async (category) => {
+  try {
+    const response = await api.get(`/phrases/category/${category}`);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
