@@ -19,7 +19,6 @@ const PhraseFlashPage = () => {
     if (keys.length > 0) {
       setCurrentCardIndex((prevIndex) => (prevIndex + 1) % keys.length);
       setIsCardFlipped(false);
-      
     }
   };
 

@@ -1,9 +1,14 @@
+import { useParams } from "react-router-dom"
+
 import { PageContainer,
   HeaderWrap,
   Header,
   CatContainer,
   CatCard
   } from '../../components/CategoryElements'
+
+const [phraseData, setPhraseData] = useState({});
+let params = useParams
 
 const PhrasesPage = () => {
 return (
@@ -12,9 +17,10 @@ return (
   <Header> What Do You want to study?</Header>
 </HeaderWrap>
 <CatContainer>
-  <CatCard to="/flashcards/letters">letters</CatCard> 
-  <CatCard to="/flashcards/numbers">numbers</CatCard> 
-  <CatCard to="/flashcards/phrases">phrases</CatCard> 
+
+  <CatCard to="/flashcards/phrases/${categoty}">{params.category}</CatCard> 
+  <CatCard to="/flashcards/phrases/common-questions">common-questions</CatCard> 
+  <CatCard to="/flashcards/phrases/">phrases</CatCard> 
 </CatContainer>
 </PageContainer>
 )
