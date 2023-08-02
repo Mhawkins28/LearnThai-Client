@@ -6,6 +6,7 @@ import FlashCatPage from "./pages/FlashPages/FlashCatPage";
 import LetterFlashPage from "./pages/FlashPages/LetterFlashPage";
 import ConsonantFlashPage from "./pages/FlashPages/ConsonantFlashPage";
 import NumberFlashPage from "./pages/FlashPages/NumberFlashPage";
+import PhrasesPage from "./pages/FlashPages/PhrasesPage";
 import PhraseFlashPage from "./pages/FlashPages/PhraseFlashPage";
 import ResourcePage from "./pages/ResourcePages/ResourceCatPage";
 import VidResourcePage from "./pages/ResourcePages/VidResourcePage";
@@ -30,7 +31,8 @@ function App() {
         <Route path='/flashcards/letters/consonants' element={<ConsonantFlashPage />} />
         {/* <Route path='/flashcards/letters/vowels' element={<VowelFlashPage />} /> */}
         <Route path='/flashcards/numbers' element={<NumberFlashPage />} />
-        <Route path='/flashcards/phrases' element={<PhraseFlashPage />} />
+        <Route path='/flashcards/phrases' element={<PhrasesPage />} />
+
         <Route path='/resources' element={<ResourcePage />} />
         <Route path='/resources/videos' element={<VidResourcePage />} />
         <Route path='/resources/materials' element={<MatResourcePage />} />
