@@ -7,7 +7,9 @@ import { PageContainer,
   CatCard
   } from '../../components/CategoryElements'
 
-const [phraseData, setPhraseData] = useState({});
+const [phraseData, setPhraseData] = useState({
+  
+});
 let params = useParams
 
 const PhrasesPage = () => {

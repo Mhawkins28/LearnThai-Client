@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useParams } from "react-router-dom";
 import TopNav from "./components/Navbars/TopNav";
 import WelcomePage from "./pages/WelcomePage"
 import DashboardPage from "./pages/DashboardPage";
@@ -32,6 +32,7 @@ function App() {
         {/* <Route path='/flashcards/letters/vowels' element={<VowelFlashPage />} /> */}
         <Route path='/flashcards/numbers' element={<NumberFlashPage />} />
         <Route path='/flashcards/phrases' element={<PhrasesPage />} />
+        <Route path='/flashcards/phrases/cat/:category' element={<PhraseFlashPage />} />
 
         <Route path='/resources' element={<ResourcePage />} />
         <Route path='/resources/videos' element={<VidResourcePage />} />
