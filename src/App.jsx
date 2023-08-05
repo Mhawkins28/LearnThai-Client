@@ -32,7 +32,7 @@ function App() {
         {/* <Route path='/flashcards/letters/vowels' element={<VowelFlashPage />} /> */}
         <Route path='/flashcards/numbers' element={<NumberFlashPage />} />
         <Route path='/flashcards/phrases' element={<PhrasesPage />} />
-        <Route path='/flashcards/phrases/cat/:category' element={<PhraseFlashPage />} />
+        {/* <Route path='/flashcards/phrases/cat/:category' element={<PhraseFlashPage />} /> */}
 
         <Route path='/resources' element={<ResourcePage />} />
         <Route path='/resources/videos' element={<VidResourcePage />} />
