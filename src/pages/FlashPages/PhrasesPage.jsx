@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useParams } from "react-router-dom"
 
 import { PageContainer,
@@ -7,19 +8,20 @@ import { PageContainer,
   CatCard
   } from '../../components/CategoryElements'
 
-const [phraseData, setPhraseData] = useState({
+  let params = useParams
   
-});
-let params = useParams
+  const PhrasesPage = () => {
 
-const PhrasesPage = () => {
+
+  const [phraseData, setPhraseData] = useState({
+  });
+  
 return (
 <PageContainer>
 <HeaderWrap>
   <Header> What Do You want to study?</Header>
 </HeaderWrap>
 <CatContainer>
-
   <CatCard to="/flashcards/phrases/${categoty}">{params.category}</CatCard> 
   <CatCard to="/flashcards/phrases/common-questions">common-questions</CatCard> 
   <CatCard to="/flashcards/phrases/">phrases</CatCard> 
