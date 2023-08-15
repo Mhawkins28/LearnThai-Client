@@ -5,7 +5,7 @@ export const getAllNumbers = async () => {
     const response = await api.get("/numbers");
     return response.data;
   } catch (error) {
-    console.error("Error: Get all Numbers", error);
+    console.log("Error: Get all Numbers", error);
   }
 };
 
