@@ -5,7 +5,7 @@ export const getAllAlpha = async () => {
     const response = await api.get("/consonants");
     return response.data;
   } catch (error) {
-    console.error("Error: Get all Consonants", error);
+    console.log("Error: Get all Consonants", error);
   }
 };
 
@@ -14,7 +14,7 @@ export const getOneAlpha = async (id) => {
     const response = await api.get(`/consonants/${id}`);
     return response.data;
   } catch (error) {
-    console.error("Error: Get One Consonant", error);
+    console.log("Error: Get One Consonant", error);
   }
 };
 
@@ -23,7 +23,7 @@ export const createAlpha = async (AlphaData) => {
     const response = await api.post("/consonants", AlphaData);
     return response.data;
   } catch (error) {
-    console.error("Error: Create Consonant", error);
+    console.log("Error: Create Consonant", error);
   }
 };
 
@@ -32,7 +32,7 @@ export const updateAlpha = async (id, AlphaData) => {
     const response = await api.put(`/consonants/${id}`, AlphaData);
     return response.data;
   } catch (error) {
-    console.error("Error: Update Consonant", error);
+    console.log("Error: Update Consonant", error);
   }
 };
 
@@ -41,7 +41,7 @@ export const deleteAlpha = async (id) => {
     const response = await api.delete(`/consonants/${id}`);
     return response.data;
   } catch (error) {
-    console.error("Error: Delete One Consonant", error);
+    console.log("Error: Delete One Consonant", error);
   }
 };
 
