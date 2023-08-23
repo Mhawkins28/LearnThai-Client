@@ -34,6 +34,8 @@ function App() {
         <Route path='/flashcards/phrases' element={<PhrasesPage />} />
         {/* <Route path='/flashcards/phrases/cat/:category' element={<PhraseFlashPage />} /> */}
 
+        <Route path='/notes' element={<ResourcePage />} />
+        <Route path='/notes/favorites' element={<ResourcePage />} />
         <Route path='/resources' element={<ResourcePage />} />
         <Route path='/resources/videos' element={<VidResourcePage />} />
         <Route path='/resources/materials' element={<MatResourcePage />} />
