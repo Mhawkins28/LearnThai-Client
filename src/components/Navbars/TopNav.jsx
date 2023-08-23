@@ -28,7 +28,7 @@ function TopNav() {
             <NavLinks to="/resources">Resources</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="/welcome">Welcome?</NavLinks>
+            <NavLinks to="/notes">Notes?</NavLinks>
           </NavItem>
         </NavMenu>     
       </NavbarContainer>

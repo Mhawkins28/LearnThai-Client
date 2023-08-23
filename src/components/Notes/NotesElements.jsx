@@ -46,9 +46,9 @@ export const NotesContnet = styled.div`
 /* NTS: 
 
 Should I make a PageElements component for basic page layout/styling?
-  pagecontainer
-  headerwrap (do I need this?)
-  header
+  PageContainer
+  HeaderWrap (do I need this?)
+  Header
   BtnWrap
   Btn 
 
