@@ -5,7 +5,7 @@ let apiUrl;
 const apiUrls = {
   // Need to change later on real link
   production: "",
-  development: "http://localhost:3000/",
+  development: "http://localhost:3030/",
 };
 
 // Determine if production or deployment
