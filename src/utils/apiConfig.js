@@ -3,9 +3,8 @@ import axios from "axios";
 let apiUrl;
 
 const apiUrls = {
-  // Need to change later on real link
-  production: "",
-  development: "http://localhost:3030/",
+  production: "https://learn-thai-api-e2ec4a068c3c.herokuapp.com/",
+  development: "https://learn-thai-api-e2ec4a068c3c.herokuapp.com/",
 };
 
 // Determine if production or deployment
